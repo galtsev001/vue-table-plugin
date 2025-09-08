@@ -1,0 +1,47 @@
+{
+  "name": "vue-table-plugin",
+  "version": "1.0.0",
+  "description": "A powerful, customizable table component for Vue.js with filtering, pagination, and editing capabilities",
+  "main": "dist/vue-table-plugin.umd.js",
+  "module": "dist/vue-table-plugin.esm.js",
+  "unpkg": "dist/vue-table-plugin.min.js",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name vue-table-plugin src/index.js",
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint"
+  },
+  "keywords": [
+    "vue",
+    "table",
+    "plugin",
+    "data-table",
+    "pagination",
+    "filtering",
+    "editable"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.0.0",
+    "xlsx": "^0.18.5",
+    "moment": "^2.29.4",
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.11.0"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "vue": "^3.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vue-table-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/vue-table-plugin/issues"
+  },
+  "homepage": "https://github.com/your-username/vue-table-plugin#readme"
+}
