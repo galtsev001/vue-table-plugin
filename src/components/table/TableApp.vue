@@ -257,7 +257,7 @@ export default {
       }
 
       changedData.new = [];
-      changedData.update = [];
+      changedData.updated = [];
       changedRows.value = new Set();
       newRows.value = new Set();
       selectedRows.value = new Set();
@@ -268,7 +268,7 @@ export default {
       if (changedData.deleted.length > 0) {
         emit("delete-data", changedData.deleted);
       }
-      changedData.delete = [];
+      changedData.deleted = [];
       selectedRows.value = new Set();
     };
 

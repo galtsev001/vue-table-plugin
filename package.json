@@ -12,7 +12,9 @@
   "scripts": {
     "build": "vue-cli-service build --target lib --name vue-table-plugin src/index.js",
     "serve": "vue-cli-service serve",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "keywords": [
     "vue",
@@ -26,14 +28,18 @@
   "author": "Your Name",
   "license": "MIT",
   "peerDependencies": {
-    "vue": "^3.0.0",
-    "xlsx": "^0.18.5",
-    "moment": "^2.29.4",
     "bootstrap": "^5.3.0",
-    "bootstrap-icons": "^1.11.0"
+    "bootstrap-icons": "^1.11.0",
+    "moment": "^2.29.4",
+    "vue": "^3.0.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.5",
     "@vue/cli-service": "^5.0.8",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^29.0.1",
+    "vitest": "^4.1.1",
     "vue": "^3.3.4"
   },
   "repository": {

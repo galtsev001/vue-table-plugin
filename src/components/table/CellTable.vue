@@ -96,16 +96,12 @@ export default {
     );
 
     const shouldShowSelect = computed(() => {
-      return Object.values(links.value).some(
-        (link) => link.link_column === props.id
-      );
+      return links.value?.some((link) => link.link_column === props.id) ?? false;
     });
 
     const sortedOptions = computed(() => {
-      const link = Object.values(links.value).find(
-        (link) => link.link_column === props.id
-      );
-      
+      const link = links.value?.find((link) => link.link_column === props.id);
+
       if (!link || !link.value) return [];
       
       // Преобразуем объект в массив [key, value] и сортируем
